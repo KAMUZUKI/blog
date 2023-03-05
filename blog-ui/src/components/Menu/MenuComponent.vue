@@ -2,25 +2,25 @@
     <a-card bordered style="width: 200px;border-radius: 20px;margin: 60px 0 0 68px;" hoverable>
         <div style="width: 100%" v-for="(item, index) in data" :key="index">
             <div class="list-item" v-if="index == 0">
-                <router-link @click.prevent="showContentBycategory(index+1)" to="/">
+                <router-link @click.prevent="showContentBycategory(index + 1)" to="/">
                     <a-list-item class="a-list-item">
-                        <a-tag color="red">Top{{ index+1 }}</a-tag>{{ item }}
+                        <a-tag color="red">Top{{ index + 1 }}</a-tag>{{ item }}
                     </a-list-item>
-                </router-link><br/>
+                </router-link><br />
             </div>
             <div class="list-item" v-else-if="index == 1">
-                <router-link @click.prevent="showContentBycategory(index+1)" to="/">
+                <router-link @click.prevent="showContentBycategory(index + 1)" to="/">
                     <a-list-item class="a-list-item">
-                        <a-tag color="cyan">Top{{ index+1 }}</a-tag>{{ item }}
-                    </a-list-item><br/>
+                        <a-tag color="cyan">Top{{ index + 1 }}</a-tag>{{ item }}
+                    </a-list-item><br />
                 </router-link>
             </div>
             <div class="list-item" v-else>
-                <router-link @click.prevent="showContentBycategory(index+1)" to="/">
+                <router-link @click.prevent="showContentBycategory(index + 1)" to="/">
                     <a-list-item class="a-list-item">
-                        <a-tag color="green">Top{{ index+1 }}</a-tag>{{ item }}
+                        <a-tag color="green">Top{{ index + 1 }}</a-tag>{{ item }}
                     </a-list-item>
-                </router-link><br/>
+                </router-link><br />
             </div>
         </div>
     </a-card>
@@ -33,14 +33,12 @@
     text-align: left;
     border-radius: 10px;
 }
-
 </style>
 
-
 <script>
-import { defineComponent,ref } from 'vue';
+import { defineComponent, ref } from 'vue';
 import axios from 'axios'
-import {useStore } from 'vuex'
+import { useStore } from 'vuex'
 
 export default defineComponent({
     name: 'MenuComponent',
@@ -51,6 +49,7 @@ export default defineComponent({
         //TODO: 从后台获取分类
         axios.post(store.state.path+'/category/getCategory')
         .then(res=>{
+            console.log(res.data)
           if (res.data.code == 1) {
             tmpData.value = res.data.data
             for (var i = 0; i < tmpData.value.length; i++) {
@@ -66,7 +65,7 @@ export default defineComponent({
         });
 
 
-        const showContentBycategory = (type)=>{
+        const showContentBycategory = (type) => {
             props.showContentByCategory(type);
         }
 

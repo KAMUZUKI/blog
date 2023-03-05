@@ -48,10 +48,8 @@ export default defineComponent({
         const data = ref([])
         const tmpData = ref([])
         const store = useStore()
-        var params = new URLSearchParams();
-        params.append('op', 'getCategory');
         //TODO: 从后台获取分类
-        axios.post(store.state.path+'/info.action', params)
+        axios.post(store.state.path+'/category/getCategory')
         .then(res=>{
           if (res.data.code == 1) {
             tmpData.value = res.data.data

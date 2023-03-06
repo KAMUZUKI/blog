@@ -1,5 +1,0 @@
-Manifest-Version: 1.0
-Created-By: IntelliJ IDEA
-Built-By: MUZUKI
-Build-Jdk: Eclipse Temurin version 16.0.2
-

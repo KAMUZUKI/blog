@@ -95,9 +95,8 @@ export default defineComponent({
                 mode.value = false
                 //TODO:通过articleId获取文章详情  修改文章
                 var params = new URLSearchParams();
-                params.append('op', 'getArticleById');
                 params.append('id', editInfo);
-                axios.post(store.state.path + '/info.action', params)
+                axios.post(store.state.path + '/article/getArticleById', params)
                     .then(res => {
                         if (res.data.code == 1) {
                             formState.user = res.data.data

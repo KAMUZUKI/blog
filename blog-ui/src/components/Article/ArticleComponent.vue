@@ -44,9 +44,8 @@ export default defineComponent({
 
         //TODO:通过articleId获取文章详情
         var params = new URLSearchParams();
-        params.append('op', 'getArticleById');
         params.append('id', id);
-        axios.post(store.state.path+'/info.action', params)
+        axios.post(store.state.path+"/article/getArticleById", params)
           .then(res => {
             console.log(res)
             if (res.data.code == 1) {

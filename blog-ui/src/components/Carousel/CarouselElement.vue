@@ -46,11 +46,9 @@ export default {
 
         const getImage = () => {
             //TODO:获取阅读数最高的三篇文章
-            var params = new URLSearchParams();
-            params.append('op', 'getArticleTop');
-            axios.post(store.state.path+'/info.action', params)
+            axios.post(store.state.path+"/article/getArticleTop")
                 .then(res => {
-                    if (res.data.code == 1) {
+                    if (res == null) {
                         listDataTemp.value = res.data.data
                         for (const [key, value] of Object.entries(listDataTemp.value)) {
                           console.log(key)

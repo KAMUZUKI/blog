@@ -41,8 +41,7 @@ export default defineComponent({
 
     const initFlink = () => {
       var params = new URLSearchParams();
-      params.append('op', 'getFlink');
-      axios.post(store.state.path+'/info.action', params)
+      axios.post(store.state.path+'/flink/getFlink', params)
       .then(res => {
           if (res.data.code == 1) {
             tmpFlinkList.value = res.data.data

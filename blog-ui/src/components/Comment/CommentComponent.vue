@@ -77,9 +77,8 @@ export default defineComponent({
         //获取评论
         const initComment = () => {
             var params = new URLSearchParams()
-            params.append('op', 'getComments')
             params.append('articleId', articleId)
-            axios.post(store.state.path+'/info.action', params)
+            axios.post(store.state.path+"/comment/getComments", params)
                 .then(res => {
                     if (res.data.code == 1) {
                         CommentData.value = res.data.data
@@ -135,7 +134,7 @@ export default defineComponent({
             params.append('createBy',userDetial.value.id)
             params.append('content',value.value)
             params.append('createTime',dayjs().format("YYYY-MM-DD HH:mm:ss"))
-            axios.post(store.state.path+'/info.action', params)
+            axios.post(store.state.path, params)
                 .then(res => {
                     if (res.data.code == 1) {
                         comments.value.push({

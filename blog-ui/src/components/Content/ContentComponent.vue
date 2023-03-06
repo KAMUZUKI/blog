@@ -74,8 +74,7 @@ export default defineComponent({
       }
       // TODO:获取文章列表   listData
       var params = new URLSearchParams();
-      params.append('op', 'getAllArticle');
-      axios.post(store.state.path + '/info.action', params)
+      axios.post(store.state.path + '/articlce/getAllArticle', params)
         .then(res => {
           console.log(res)
           if (res.data.code == 1) {

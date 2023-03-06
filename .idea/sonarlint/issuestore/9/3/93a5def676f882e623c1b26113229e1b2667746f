@@ -1,0 +1,8 @@
+
+E
+java:S5411d"*Use the primitive boolean expression here.(–ž ãÿÿÿÿÿ
+’
+java:S1130\"wRemove the declaration of thrown exception 'javax.servlet.ServletException', as it cannot be thrown from method's body.(ÉÉ§”üÿÿÿÿ
+V	java:S125^"<This block of commented-out lines of code should be removed.(Ûœ‹çüÿÿÿÿ
+V
+java:S1128";Remove this unused import 'javax.servlet.http.HttpServlet'.(û÷Å›ÿÿÿÿÿ

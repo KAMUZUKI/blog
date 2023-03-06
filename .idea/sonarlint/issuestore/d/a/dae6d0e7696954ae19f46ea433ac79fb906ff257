@@ -1,0 +1,137 @@
+
+p
+java:S2293‡"YReplace the type specification in this constructor call with the diamond operator ("<>").(·¬Ëß
+u
+java:S2293¾"YReplace the type specification in this constructor call with the diamond operator ("<>").(‘Ï¿øÿÿÿÿ
+u
+java:S2293Ü"YReplace the type specification in this constructor call with the diamond operator ("<>").(‘Ï¿øÿÿÿÿ
+u
+java:S2293Ù"YReplace the type specification in this constructor call with the diamond operator ("<>").(–¼£¬ùÿÿÿÿ
+p
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Õé„©
+u
+java:S2293·"YReplace the type specification in this constructor call with the diamond operator ("<>").(–¼£¬ùÿÿÿÿ
+c
+java:S1192*"MDefine a constant instead of duplicating this literal "æ— æ•°æ®..." 3 times.(á½ğ†
+F
+java:S5411’"*Use the primitive boolean expression here.(Ø”áÉûÿÿÿÿ
+A
+java:S5411§"*Use the primitive boolean expression here.(Ì¯…š
+A
+java:S5411ª"*Use the primitive boolean expression here.(»«ƒ¢
+F
+java:S5411Ù"*Use the primitive boolean expression here.(Á¸Êñûÿÿÿÿ
+]
+java:S2259("BA "NullPointerException" could be thrown; "list" is nullable here.(Ïìäğşÿÿÿÿ
+]
+java:S2259l"BA "NullPointerException" could be thrown; "list" is nullable here.(Ïìäğşÿÿÿÿ
+^
+java:S2259ÿ"BA "NullPointerException" could be thrown; "list" is nullable here.(Ïìäğşÿÿÿÿ
+N
+java:S2589à"7Remove this expression which always evaluates to "true"(§’ß—
+N
+java:S1854#"8Remove this useless assignment to local variable "user".(Ç­‚û
+I
+java:S1172 ".Remove this unused method parameter "request".(İ¦–šüÿÿÿÿ
+?
+java:S1481#")Remove this unused "user" local variable.(Ç­‚û
+Y
+java:S1155(">Use isEmpty() to check whether the collection is empty or not.(Ïìäğşÿÿÿÿ
+O
+java:S1854C"9Remove this useless assignment to local variable "jedis".(‹ë
+@
+java:S1481C"*Remove this unused "jedis" local variable.(‹ë
+J
+java:S1481D"/Remove this unused "categoryId" local variable.(ÃŸº‰ıÿÿÿÿ
+Y
+java:S1155K">Use isEmpty() to check whether the collection is empty or not.(É€°Îøÿÿÿÿ
+O
+java:S1854f"9Remove this useless assignment to local variable "jedis".(‹ë
+V
+java:S1854e";Remove this useless assignment to local variable "article".(Ú»Àßıÿÿÿÿ
+I
+java:S1172b".Remove this unused method parameter "request".(Æì›ñúÿÿÿÿ
+G
+java:S1481e",Remove this unused "article" local variable.(Ú»Àßıÿÿÿÿ
+@
+java:S1481f"*Remove this unused "jedis" local variable.(‹ë
+J
+java:S1481g"/Remove this unused "categoryId" local variable.(ÃŸº‰ıÿÿÿÿ
+Y
+java:S1155l">Use isEmpty() to check whether the collection is empty or not.(Ïìäğşÿÿÿÿ
+
+java:S1130ƒ"wRemove the declaration of thrown exception 'javax.servlet.ServletException', as it cannot be thrown from method's body.(ÚÔëÒ
+E
+java:S1172ƒ".Remove this unused method parameter "request".(ÚÔëÒ
+“
+java:S1130›"wRemove the declaration of thrown exception 'javax.servlet.ServletException', as it cannot be thrown from method's body.(Ä±Ö‘üÿÿÿÿ
+U
+java:S1854½"9Remove this useless assignment to local variable "flink".(êƒÒ¯ÿÿÿÿÿ
+E
+java:S1172º".Remove this unused method parameter "request".( ®¶­
+F
+java:S1481½"*Remove this unused "flink" local variable.(êƒÒ¯ÿÿÿÿÿ
+Z
+java:S1155Â">Use isEmpty() to check whether the collection is empty or not.(”¦Üšûÿÿÿÿ
+U
+java:S1854Û"9Remove this useless assignment to local variable "flink".(êƒÒ¯ÿÿÿÿÿ
+E
+java:S1172Ø".Remove this unused method parameter "request".(”»Ç²
+F
+java:S1481Û"*Remove this unused "flink" local variable.(êƒÒ¯ÿÿÿÿÿ
+Z
+java:S1155à">Use isEmpty() to check whether the collection is empty or not.(”¦Üšûÿÿÿÿ
+X
+java:S1854Õ"<Remove this useless assignment to local variable "category".(şÙ¾ûÿÿÿÿ
+D
+java:S1481Ó"-Remove this unused "category" local variable.(•å°Û
+U
+java:S1155Ø">Use isEmpty() to check whether the collection is empty or not.(•ñ¥À
+R
+java:S1854Š"6Remove this useless assignment to local variable "db".(œ¢×­ûÿÿÿÿ
+2
+java:S3626¦"Remove this redundant jump.(ûÁİ…
+C
+java:S1481Š"'Remove this unused "db" local variable.(œ¢×­ûÿÿÿÿ
+U
+java:S1155–">Use isEmpty() to check whether the collection is empty or not.(‡±ĞÎ
+R
+java:S1854²";Remove this useless assignment to local variable "article".(¿£î
+W
+java:S1854³";Remove this useless assignment to local variable "session".(ûİÙ¹şÿÿÿÿ
+H
+java:S1481°",Remove this unused "article" local variable.(Ú»Àßıÿÿÿÿ
+H
+java:S1481³",Remove this unused "session" local variable.(ûİÙ¹şÿÿÿÿ
+U
+java:S1155¶">Use isEmpty() to check whether the collection is empty or not.(•ñ¥À
+P
+java:S1854÷"9Remove this useless assignment to local variable "jedis".(‹ë
+W
+java:S1854ö";Remove this useless assignment to local variable "article".(Ú»Àßıÿÿÿÿ
+J
+java:S1172ó".Remove this unused method parameter "request".(¸ªÜÙüÿÿÿÿ
+H
+java:S1481ö",Remove this unused "article" local variable.(Ú»Àßıÿÿÿÿ
+A
+java:S1481÷"*Remove this unused "jedis" local variable.(‹ë
+K
+java:S1481ø"/Remove this unused "categoryId" local variable.(ÃŸº‰ıÿÿÿÿ
+Z
+java:S1155ÿ">Use isEmpty() to check whether the collection is empty or not.(Ïìäğşÿÿÿÿ
+W
+java:S1854š";Remove this useless assignment to local variable "article".(Ú»Àßıÿÿÿÿ
+H
+java:S1481š",Remove this unused "article" local variable.(Ú»Àßıÿÿÿÿ
+Z
+java:S1155¤">Use isEmpty() to check whether the collection is empty or not.(É€°Îøÿÿÿÿ
+W
+java:S1854Ğ";Remove this useless assignment to local variable "comment".(áÕ¶Ùúÿÿÿÿ
+F
+java:S1481Í"/Remove this unused "articleId1" local variable.(ç¦’ç
+H
+java:S1481Ğ",Remove this unused "comment" local variable.(áÕ¶Ùúÿÿÿÿ
+U
+java:S1155à">Use isEmpty() to check whether the collection is empty or not.(§’ß—
+V
+java:S1128";Remove this unused import 'javax.servlet.http.HttpServlet'.(û÷Å›ÿÿÿÿÿ

@@ -27,7 +27,7 @@
         <template #extra>
           <img width="272" alt="logo" :src="(item.titleImgs==''?'https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png':item.titleImgs==' '?'https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png':item.titleImgs)" />
         </template>
-        <a-list-item-meta :description="(item.description.substring(0, 40) + '  ' + item.createTime)">
+        <a-list-item-meta :description="(item.content.substring(0, 40) + '  ' + item.createTime)">
           <template #title>
             <router-link class="nav-link" :to="'/article/' + item.id" @click="pushToDetail(item)">{{ item.title }}
             </router-link>

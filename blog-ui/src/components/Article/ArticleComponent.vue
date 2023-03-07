@@ -39,13 +39,13 @@ export default defineComponent({
     const judgeMode = (mode) => {
       if (route.query.mode == 1 || mode == 1) {
         // const info = route.path
-        const id = route.path.replace('/article/', '')
+        const articleId = route.path.replace('/article/', '')
         isShow.value = !isShow.value
 
         //TODO:通过articleId获取文章详情
         var params = new URLSearchParams();
-        params.append('id', id);
-        axios.post(store.state.path+"/article/getArticleById", params)
+        params.append('articleId', articleId);
+        axios.post(store.state.path+"/article/getArticleById",params)
           .then(res => {
             console.log(res)
             if (res.data.code == 1) {

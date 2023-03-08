@@ -142,7 +142,6 @@ export default defineComponent({
             console.log(values)
             var params = new URLSearchParams();
             if (mode.value) {
-                params.append('op', 'addArticle');
                 params.append('author', JSON.parse(sessionStorage.getItem("user")).username);
                 params.append('title', formState.user.title)
                 params.append('content', formState.user.content)
@@ -151,7 +150,7 @@ export default defineComponent({
                 params.append('label', keywordOptions.value ?? '')
                 params.append('titleImgs', formState.user.titleImgs ?? JSON.parse(sessionStorage.getItem("user")).head)
                 params.append('createTime', formState.user.createTime)
-                axios.post(store.state.path + '/info.action', params)
+                axios.post(store.state.path + '/article/addArticle', params)
                     .then(res => {
                         if (res.data.code == 1) {
                             formState.user.author = JSON.parse(sessionStorage.getItem("user")).username
@@ -192,7 +191,6 @@ export default defineComponent({
                         console.log(error);
                     });
             }else{
-                params.append('op', 'alterArticle');
                 params.append('id', route.query.articleId);
                 params.append('author',JSON.parse(sessionStorage.getItem("user")).username);
                 params.append('title',formState.user.title)
@@ -202,7 +200,7 @@ export default defineComponent({
                 params.append('label',keywordOptions.value??'')
                 params.append('titleImgs',formState.user.titleImgs??JSON.parse(sessionStorage.getItem("user")).head)
                 params.append('createTime',formState.user.createTime)
-                axios.post(store.state.path+'/article.action', params)
+                axios.post(store.state.path+'/article/alterArticle', params)
                     .then(res => {
                         if (res.data.code == 1) {
                             message.success('文章修改成功')

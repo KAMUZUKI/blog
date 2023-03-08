@@ -27,7 +27,7 @@
         <template #extra>
           <img width="272" alt="logo" :src="(item.titleImgs==''?'https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png':item.titleImgs==' '?'https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png':item.titleImgs)" />
         </template>
-        <a-list-item-meta :description="(item.content.substring(0, 40) + '  ' + item.createTime)">
+        <a-list-item-meta :description="(item.createTime)">
           <template #title>
             <router-link class="nav-link" :to="'/article/' + item.id" @click="pushToDetail(item)">{{ item.title }}
             </router-link>
@@ -178,12 +178,12 @@ export default defineComponent({
       };
     });
 
-    const changeContenByCategory = (type) => {
+    const changeContentByCategory = (type) => {
       initDataList.value = [];
       initDataByCategory(type);
     }
 
-    const changeContenByKeyword = (type) => {
+    const changeContentByKeyword = (type) => {
       initDataList.value = [];
       initDataByKeyword(type);
     }
@@ -214,10 +214,9 @@ export default defineComponent({
         }
         if (mode == 1) {
           var params = new URLSearchParams();
-          params.append('op', 'changeData');
           params.append('articleId', articleId);
           params.append('userId', JSON.parse(sessionStorage.getItem("user")).id);
-          axios.post(store.state.path + '/article.action', params)
+          axios.post(store.state.path + '/article/changeData', params)
             .then(res => {
               if (res.data.code == 1) {
                 //点赞执行成功
@@ -288,8 +287,8 @@ export default defineComponent({
       pushToDetail,
       initDataByKeyword,
       initDataByCategory,
-      changeContenByCategory,
-      changeContenByKeyword,
+      changeContentByCategory,
+      changeContentByKeyword,
     };
   },
   components: {

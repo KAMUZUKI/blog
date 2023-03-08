@@ -46,13 +46,13 @@ export default defineComponent({
         const refresh = ref(true)
 
         const showContentByCategory = (type) => {
-            transContent.value.changeContenByCategory(type)
+            transContent.value.changeContentByCategory(type)
             refresh.value = !refresh.value
             refresh.value = !refresh.value
         }
 
         const showContentByKeyword = (type) => {
-            transContent.value.changeContenByKeyword(type)
+            transContent.value.changeContentByKeyword(type)
             refresh.value = !refresh.value
             refresh.value = !refresh.value
         }

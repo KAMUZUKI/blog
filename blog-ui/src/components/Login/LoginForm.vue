@@ -60,11 +60,10 @@ export default defineComponent({
 
     const login = () => {
       var params = new URLSearchParams();
-      params.append('op', 'login');
-      params.append('username', formState.username);
+      params.append('account', formState.username);
       params.append('password', formState.password);
       //TODO: Login
-      axios.post(store.state.path + '/user.action', params)
+      axios.post(store.state.path + '/user/login', params)
         .then(res => {
           if (res.data.code == 1) {
             store.state.isLogin = true
@@ -93,7 +92,7 @@ export default defineComponent({
 
     const formState = reactive({
       id: 1,
-      username: '10001',
+      username: 'zhangsan',
       password: 'a',
       remember: true,
     });
@@ -114,10 +113,9 @@ export default defineComponent({
       if (sessionStorage.getItem("user") !== null) {
         var userId = JSON.parse(sessionStorage.getItem("user")).id
         var params = new URLSearchParams();
-        params.append('op', 'getLikeList');
-        params.append('id', userId);
+        params.append('userId', userId);
         //TODO: 获取用户喜欢的列表
-        axios.post(store.state.path + '/info.action', params)
+        axios.post(store.state.path + '/user/getLikeList', params)
           .then(res => {
             if (res.data.code == 1) {
               likeList.value = res.data.data

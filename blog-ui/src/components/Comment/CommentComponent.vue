@@ -129,12 +129,11 @@ export default defineComponent({
 
             //TODO:提交评论
             var params = new URLSearchParams()
-            params.append('op', 'addComment')
             params.append('articleId',articleId)
             params.append('createBy',userDetial.value.id)
             params.append('content',value.value)
             params.append('createTime',dayjs().format("YYYY-MM-DD HH:mm:ss"))
-            axios.post(store.state.path, params)
+            axios.post(store.state.path +"/addComment", params)
                 .then(res => {
                     if (res.data.code == 1) {
                         comments.value.push({

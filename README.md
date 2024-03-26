@@ -16,3 +16,4 @@
 执行blog-system/src/main/resources/sql/blog-mysql.sql建立数据库
 修改blog-system/src/main/resources/db.properties 连接数据库
 ```
+该项目已重构为[MICROCOM](https://github.com/KAMUZUKI/MICROCOM)
